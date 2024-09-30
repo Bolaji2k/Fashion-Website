@@ -11,6 +11,7 @@ menuBtn.onclick = () => {
 
 navLinks.onclick = () => {
     navLinks.classList.remove("open")
+    document.body.classList.remove('no-scroll');
     menuBtnIcon.setAttribute("class", "ri-menu-line")
 }
 
