@@ -4,6 +4,7 @@ const navLinks = document.getElementById("nav-links")
 
 menuBtn.onclick = () => {
     navLinks.classList.toggle("open")
+    document.body.classList.toggle('no-scroll');
     const isOpen = navLinks.classList.contains("open")
     menuBtnIcon.setAttribute("class", (isOpen)? "ri-close-line" : "ri-menu-line")
 }
@@ -12,6 +13,8 @@ navLinks.onclick = () => {
     navLinks.classList.remove("open")
     menuBtnIcon.setAttribute("class", "ri-menu-line")
 }
+
+
 
 const scrollRevealOption = {
     origin: 'bottom',
